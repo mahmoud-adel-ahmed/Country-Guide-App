@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  font-size: clamp(0.8em, 0.5vw + 0.7em, 1em);
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background: #3d64e6;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: 90vw;
+  max-width: 37.5em;
+  border-radius: 0.62em;
+  padding: 1.5em;
+}
+@media screen and (max-width: 28.125em) {
+  .container {
+    padding: 1em;
+  }
+}
+.container .search-wrapper {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.25em;
+}
+.container .search-wrapper button {
+  font-size: 1em;
+  background-color: #3d64e6;
+  color: #fff;
+  padding: 0.8em 0;
+  border-radius: 1.5em;
+  cursor: pointer;
+}
+.container .search-wrapper input {
+  padding: 0.62em;
+  caret-color: #3d64e6;
+  font-size: 1em;
+  color: #222a43;
+  border-bottom: 2px solid #3d64e6;
+}
+.container .result {
+  margin-top: 1.25em;
+}
+.container .result .flag-img {
+  display: block;
+  width: 45%;
+  min-width: 7.5em;
+  margin: 1.8em auto 1.2em auto;
+}
+.container .result h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #222a43;
+  margin-bottom: 1.8em;
+  letter-spacing: 0.3px;
+}
+.container .result .error {
+  text-align: center;
+  font-size: 1em;
+  color: #ff465a;
+}
+.container .result .data-wrapper h3 {
+  padding: 0.7em 0;
+  letter-spacing: 0.3px;
+  color: #222a43;
+}
+.container .result .data-wrapper h3 span {
+  color: #5d6274;
+}/*# sourceMappingURL=style.css.map */
