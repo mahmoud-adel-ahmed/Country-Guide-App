@@ -3,7 +3,7 @@ let searchInput = document.querySelector("#search-inp");
 let searchBtn = document.querySelector(".search-btn");
 
 searchBtn.addEventListener("click", async function () {
-  let countryName = searchInput.value;
+  let countryName = searchInput.value.replace(/^\s+|\s+$/g, ""); // you can use trim ☺.
   resultContainer.innerHTML = "";
   searchInput.value = "";
   try {
